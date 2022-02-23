@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+$root = dirname(__DIR__);
+
+if (!is_file(sprintf('%s/vendor/autoload.php', $root))) {
+    $root = dirname(__DIR__, 4);
+}
+
+require sprintf('%s/vendor/autoload.php', $root);
+
+use BadKoldrysh\PhpCliDemo\Commands\Play;
+use Symfony\Component\Console\Application;
+
+$playCommand = new Play();
+$application = new Application();
+
+$application->add($playCommand);
+$application->setDefaultCommand($playCommand->getName());
+$application->run();

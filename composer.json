@@ -1,0 +1,25 @@
+{
+    "name": "badkoldrysh/php-cli-demo",
+    "description": "PHP command-line tool demo",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BadKoldrysh\\PhpCliDemo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "badkoldrysh",
+            "email": "ohmygodkir17@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php":"^7.4",
+        "symfony/console": "^5.4"
+    },
+    "bin": [
+        "bin/demo"
+    ]
+}
