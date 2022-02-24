@@ -28,13 +28,14 @@ class Play extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $term1 = rand(1, 15);
-        $term2 = rand(1, 15);
-        $result = $term1 + $term2;
+        $term1 = rand(1, 25);
+        $term2 = rand(1, 25);
+        $term3 = rand(1, 25);
+        $result = $term1 + $term2 + $term3;
 
         $io = new InputOutput($input, $output);
 
-        $answer = (int)$io->question(sprintf('What is %s + %s?', $term1, $term2));
+        $answer = (int)$io->question(sprintf('What is %s + %s + %s?', $term1, $term2, $term3));
 
         if ($answer === $result) {
             $io->right('Well done!');
