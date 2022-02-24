@@ -28,8 +28,8 @@ class Play extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $term1 = rand(1, 10);
-        $term2 = rand(1, 10);
+        $term1 = rand(1, 15);
+        $term2 = rand(1, 15);
         $result = $term1 + $term2;
 
         $io = new InputOutput($input, $output);
