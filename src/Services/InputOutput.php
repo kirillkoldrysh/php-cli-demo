@@ -15,7 +15,7 @@ class InputOutput extends SymfonyStyle
     }
 
     /**
-     * Display a message in case of right answer.
+     * Display a message in case of right answer...
      */
     public function right(string $message): void
     {
