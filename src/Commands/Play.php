@@ -23,6 +23,9 @@ class Play extends Command
      */
     protected static $defaultDescription = 'Play the game!';
 
+    /**
+     * Execute method
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $term1 = rand(1, 10);
